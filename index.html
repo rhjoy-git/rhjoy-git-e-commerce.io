@@ -11,11 +11,349 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/style.css">
     <title>ecommerce</title>
 </head>
 
 <body>
+    <!-- =============== Top section Start ============ -->
+    <section class="top bg-dark">
+        <div class="container py-2 text-light vertical-center justify-content-between">
+            <div class="top-contact-info vertical-center">
+                <a class="contact vertical-center" href=""><i class="fa-solid fa-phone pe-3"></i>
+                    <pre class="m-0">+1 2345 6789 <span class="mx-4 text-muted">|</span></pre>
+                </a>
+                <a class="mail vertical-center" href="#">
+                    <i class="fa-solid fa-envelope pe-3"></i>
+                    <pre class="m-0">info@company.com</pre>
+                </a>
+            </div>
+            <div class="top-social-icon">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-behance"></i></a>
+            </div>
+    </section>
+    <!-- ============== Top section End ============= -->
+    <!-- ============= Home section Start ============ -->
+    <section class="Home">
+        <nav class="navbar sticky-top py-3 navbar-expand-lg">
+            <div class="container">
+                <a href="" class="navbar-brand text-dark"><span>RENOSHOP</span>BEE</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto me-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#women">Women</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#men">Men</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#kids">Kids</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#jewellery">Jewellery</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#accessories">Accessories</a></li>
+                    </ul>
+                </div>
+                <div class="nav-cart vertical-center">
+                    <a class="mx-2 small position-relative" href="#"><i class="fa-solid fa-cart-shopping"></i>
+                        <span class="badge rounded-pill badge-notification bg-danger">1</span>
+                    </a>
+                    <a class="mx-2 small " href="#">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </a>
+                    <!-- <form class="d-flex">
+                        <input class="form-control search-input me-2" type="search" placeholder="Search"
+                            aria-label="Search">
+                        <button class="search-btn btn btn-outline-dark" type="submit">Search</button>
+                    </form> -->
+                    <a class="mx-2 small " href="#">
+                        <i class="fa-solid fa-bars-staggered"></i>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <!-- ===============Home section End ============= -->
+    <!-- ============= Hero section Start ============ -->
+    <section class="hero-sec mb-5">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="assets/img/banner.png" class="img-fluid d-block w-100" alt="...">
+                    <div class="banner-content">
+                        <h2 class="fw-bolder text-muted">THE BEST <br><span style="color: #3cb878;">WOOCOMMERCE</span>
+                        </h2>
+                        <p class="small text-muted fs-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                            sed do eiusmod tempor incididunt ut labore er dolore magna aliqua.
+                        </p>
+                        <a class="btn custom-btn" href="#" role="button">BUY NOW</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/banner.png" class="img-fluid d-block w-100" alt="...">
+                    <div class="banner-content">
+                        <h2 class="fw-bolder text-muted">THE BEST <br><span style="color: #3cb878;">WOOCOMMERCE</span>
+                        </h2>
+                        <p class="small text-muted fs-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                            sed do eiusmod tempor incididunt ut labore er dolore magna aliqua.
+                        </p>
+                        <a class="btn custom-btn" href="#" role="button">BUY NOW</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/banner.png" class="img-fluid d-block w-100" alt="...">
+                    <div class="banner-content">
+                        <h2 class="fw-bolder text-muted">THE BEST <br><span style="color: #3cb878;">WOOCOMMERCE</span>
+                        </h2>
+                        <p class="small text-muted fs-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                            sed do eiusmod tempor incididunt ut labore er dolore magna aliqua.
+                        </p>
+                        <a class="btn custom-btn" href="#" role="button">BUY NOW</a>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+    <!-- ============== Hero section End ============== -->
+    <!-- =========== Bestsell section Start ========== -->
+    <section class="bestsell my-2 py-4">
+        <div class="container-fluid">
+            <div class="row vertical-center">
+                <div class="col-lg-2">
+                    <div class="best-sell-info">
+                        <h2 class="fs-4 fw-bold">BEST SELLERS</h2>
+                        <h5 class="text-success fst-italic fs-6">The best productions form us</h5>
+                        <p class="fw-bold">Lorem ipsum dolor sit ametr consectetur
+                            adipisicing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna
+                            aliqua.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="card bestsell-product-item">
+                        <img class="card-img-top img-fluid" src="assets/img/addcart.png" alt="">
+                        <div class="card-body p-0 py-2">
+                            <div class="card-icon">
+                                <ul class="vertical-center flex-column">
+                                    <li><a class="vertical-center" href="#"><i
+                                                class=" fa-solid fa-cart-shopping"></i></i></a></li>
+                                    <li><a class="vertical-center" href="#"><i class=" fa-solid fa-heart"></i></a></li>
+                                    <li><a class="vertical-center" href="#"><i class=" fa-solid fa-retweet"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="bestsell-product-info">
+                                <h3 class="card-title">Cruise Dual Analog</h3>
+                                <h4 class="card-price fs-6">$49.99</h4>
+                            </div>
+                            <div class="ratings">
+                                <i class="fa-solid fa-star rating-color"></i>
+                                <i class="fa-solid fa-star rating-color"></i>
+                                <i class="fa-solid fa-star rating-color"></i>
+                                <i class="fa-solid fa-star rating-color"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="card bestsell-product-item">
+                        <img class="card-img-top img-fluid" src="assets/img/addcart.png" alt="">
+                        <div class="card-body p-0 py-2">
+                            <div class="card-icon">
+                                <ul class="vertical-center flex-column">
+                                    <li><a class="vertical-center" href="#"><i
+                                                class=" fa-solid fa-cart-shopping"></i></i></a></li>
+                                    <li><a class="vertical-center" href="#"><i class=" fa-solid fa-heart"></i></a></li>
+                                    <li><a class="vertical-center" href="#"><i class=" fa-solid fa-retweet"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="bestsell-product-info">
+                                <h3 class="card-title">Cruise Dual Analog</h3>
+                                <h4 class="card-price fs-6">$49.99</h4>
+                            </div>
+                            <div class="ratings">
+                                <i class="fa-solid fa-star rating-color"></i>
+                                <i class="fa-solid fa-star rating-color"></i>
+                                <i class="fa-solid fa-star rating-color"></i>
+                                <i class="fa-solid fa-star rating-color"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="card bestsell-product-item">
+                        <img class="card-img-top img-fluid" src="assets/img/addcart.png" alt="">
+                        <div class="card-body p-0 py-2">
+                            <div class="card-icon">
+                                <ul class="vertical-center flex-column">
+                                    <li><a class="vertical-center" href="#"><i
+                                                class=" fa-solid fa-cart-shopping"></i></i></a></li>
+                                    <li><a class="vertical-center" href="#"><i class=" fa-solid fa-heart"></i></a></li>
+                                    <li><a class="vertical-center" href="#"><i class=" fa-solid fa-retweet"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="bestsell-product-info">
+                                <h3 class="card-title">Cruise Dual Analog</h3>
+                                <h4 class="card-price fs-6">$49.99</h4>
+                            </div>
+                            <div class="ratings">
+                                <i class="fa-solid fa-star rating-color"></i>
+                                <i class="fa-solid fa-star rating-color"></i>
+                                <i class="fa-solid fa-star rating-color"></i>
+                                <i class="fa-solid fa-star rating-color"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="card bestsell-product-item">
+                        <img class="card-img-top img-fluid" src="assets/img/addcart.png" alt="">
+                        <div class="card-body p-0 py-2">
+                            <div class="card-icon">
+                                <ul class="vertical-center flex-column">
+                                    <li><a class="vertical-center" href="#"><i
+                                                class=" fa-solid fa-cart-shopping"></i></i></a></li>
+                                    <li><a class="vertical-center" href="#"><i class=" fa-solid fa-heart"></i></a></li>
+                                    <li><a class="vertical-center" href="#"><i class=" fa-solid fa-retweet"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="bestsell-product-info">
+                                <h3 class="card-title">Cruise Dual Analog</h3>
+                                <h4 class="card-price fs-6">$49.99</h4>
+                            </div>
+                            <div class="ratings">
+                                <i class="fa-solid fa-star rating-color"></i>
+                                <i class="fa-solid fa-star rating-color"></i>
+                                <i class="fa-solid fa-star rating-color"></i>
+                                <i class="fa-solid fa-star rating-color"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- ============ Bestsell section End ============ -->
+    <!-- ============ Service section Start ============ -->
+    <section class="serviceOffer">
+        <div class="row service mt-5">
+            <div class="col-lg-3 col-md-4 py-4 vertical-center service-cart-col">
+                <div class="service-cart py-1 vertical-center flex-column">
+                    <img class="img-fluid pt-xxl-3" src="assets/img/diamond.png" alt="">
+                    <h3 class="fs-6 fw-bold m-0 mt-3">SPECIAL OFFERS</h3>
+                    <span class="fw-bold text-muted">Shop Big Save Big</span>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 py-4 vertical-center service-cart-col">
+                <div class="service-cart py-1 vertical-center flex-column">
+                    <img class="img-fluid pt-xxl-3" src="assets/img/plane 2.png" alt="">
+                    <h3 class="fs-6 fw-bold m-0 mt-3">FREE DELIVERY</h3>
+                    <span class="fw-bold text-muted">On Orders Above $99</span>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 py-4 vertical-center service-cart-col">
+                <div class="service-cart py-1 vertical-center flex-column">
+                    <img class="img-fluid pt-xxl-3" src="assets/img/share.png" alt="">
+                    <h3 class="fs-6 fw-bold m-0 mt-3">30 DAYS RETURN</h3>
+                    <span class="fw-bold text-muted">Policy We Offers</span>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 py-4 vertical-center service-cart-col">
+                <div class="service-cart vertical-center flex-column">
+                    <img class="img-fluid" src="assets/img/rocket.png" alt="">
+                    <h3 class="fs-6 fw-bold mt-3">FASTER SHIPPING</h3>
+                    <span class="fw-bold text-muted">2 Days Express</span>
+                </div>
+            </div>
+        </div>
+        <!-- service row complete  -->
+        <div class="row offer mb-5">
+            <div class="col-md-4 vertical-center offer-card py-4">
+                <div class="offer-box vertical-center py-5">
+                    <img class="img-fluid w-75" src="assets/img/cart3.png" alt="">
+                </div>
+            </div>
+            <div class="col-lg-4 vertical-center offer-card py-4">
+                <div class="offer-box vertical-center py-5">
+                    <img class="img-fluid w-75" src="assets/img/cart1.png" alt="">
+                </div>
+            </div>
+            <div class="col-lg-4 vertical-center offer-card py-4">
+                <div class="offer-box vertical-center py-5">
+                    <img class="img-fluid w-75" src="assets/img/cart2.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ============ product section Start ============ -->
+    <section class="product">
+        <div class="container">
+            <div class="my-3 product-header text-center">
+                <h2 class="product-header-title fs-3 fw-bold">FEATURED PRODUCTS</h2>
+                <p class="small text-success fst-italic">Newest trends from top brands</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-2 col-md-3">
+                    <div class="card product-item">
+                        <img class="card-img-top img-fluid" src="assets/img/addcart.png" alt="">
+                        <div class="card-body p-0 py-2">
+                            <div class="card-icon">
+                                <ul class="vertical-center flex-column">
+                                    <li><a class="vertical-center" href="#"><i
+                                                class=" fa-solid fa-cart-shopping"></i></i></a></li>
+                                    <li><a class="vertical-center" href="#"><i class=" fa-solid fa-heart"></i></a></li>
+                                    <li><a class="vertical-center" href="#"><i class=" fa-solid fa-retweet"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="card-title">Cruise Dual Analog</h3>
+                                <h4 class="card-price fs-6">$49.99</h4>
+                            </div>
+                            <div class="ratings">
+                                <i class="fa-solid fa-star rating-color"></i>
+                                <i class="fa-solid fa-star rating-color"></i>
+                                <i class="fa-solid fa-star rating-color"></i>
+                                <i class="fa-solid fa-star rating-color"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ============ product section End ============ -->
 
     <!-- ========== BootStrap Source Link =========== -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
