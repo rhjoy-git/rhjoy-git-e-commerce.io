@@ -106,7 +106,6 @@ body {
   text-align: start;
   top: 20%;
   left: 20%;
-  right: 45%;
   overflow: hidden;
 }
 
@@ -114,7 +113,9 @@ body {
   font-size: 3rem;
   letter-spacing: 0.2rem;
 }
-
+.banner-content p{
+  width: 75%;
+}
 .custom-btn {
   color: #6c757d;
   font-size: 0.8rem !important;
@@ -260,23 +261,81 @@ body {
 .bank-card-item img {
   width: 35px;
 }
-
-
-
-
-
-/* ============= Custrom Responsive =============== */
+/* -------------------- */
+.left-col{
+  background: url(img/slide5.png) no-repeat;
+  background-size: cover;
+  width: 100%;
+  padding: 50px 20px;
+}
+.get-discount-txt{
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+.discount-info{
+  font-size: 0.8rem;
+  color: aliceblue;
+  padding: 0 50px;
+}
+.left-col form a{
+  font-size: 0.7rem;
+  font-weight: bold;
+  padding: 0.554rem;
+}
+.right-col{
+  background: #e7e9f0;
+}
+.right-col img{
+  width: 55%;
+  aspect-ratio: 3/2;
+  object-fit: contain;
+}
+/* ------------------ */
+.discount-footer p,
+.discount-social-icon a svg{
+  font-size: 0.85rem;
+  color: #000;
+}
+.discount .row:nth-child(2){
+  border-bottom: 2px solid #e7e9f0;
+}
+.discount-social-icon{
+  border-left: 2px solid #e7e9f0;
+  border-right: 2px solid #e7e9f0;
+}
+/* --------------------------- */
+.info-item li a,
+.info-item li span{
+  color: #000;
+  font-size: 0.8rem;
+}
+.info-item li a:hover{
+  text-decoration: underline;
+}
+.information .title{
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+}
+.info-item svg{
+  font-size: 0.75rem;
+}
+/* ============= Custom Responsive =============== */
 
 @media only screen and (max-width: 1199px) {
+
   /* ------hero section Start------- */
   .banner-content {
     top: 20%;
   }
+
   /* ------hero section End------- */
   /* ------BestSell section Start------- */
-  .best-sell-info{
+  .best-sell-info {
     text-align: left;
   }
+
   /* ------BestSell section End------- */
 }
 
@@ -284,62 +343,98 @@ body {
 
   /* ------hero section Start------- */
   .banner-content {
-    right: 30%;
     top: 7%;
   }
+
   .banner-content p {
     font-size: 1rem;
   }
+
   .banner-content h2 {
     font-size: 2.5rem;
   }
+
   /* ------hero section End------- */
   /* ------BestSell section Start------- */
-  .best-sell-info{
+  .best-sell-info {
     text-align: justify;
-    
+
   }
-  .best-sell-info h2{
+
+  .best-sell-info h2 {
     font-size: 1.65rem !important;
     letter-spacing: 0.1rem !important;
   }
+
   /* ------BestSell section End------- */
 }
 
 @media only screen and (max-width: 767px) {
 
   /* ------hero section Start------- */
-  .banner-content{
+  .banner-content {
     top: 0%;
   }
+
   .banner-content h2 {
     font-size: 2rem;
   }
+
   .banner-content p {
     font-size: 0.8rem !important;
   }
-  .carousel-indicators{
+
+  .carousel-indicators {
     display: none;
   }
+
   /* ------hero section End------- */
-  /* ------Service section Start------- */
-  .best-sell-info{
+  /* ------BestSell section Start------- */
+  .best-sell-info {
     text-align: center;
   }
-  .best-sell-info h2{
-    font-size: 1.5rem !important;
-    letter-spacing: 0 !important;
+
+  .best-sell-info h2 {
+    font-size: 1.7rem !important;
   }
-  .best-sell-info h5{
-    font-size: 0.8rem !important;
+
+  .best-sell-info h5 {
+    font-size: 0.85rem !important;
   }
-  .best-sell-info p{
-    font-size: 0.6rem !important;
+
+  .best-sell-info p {
+    font-size: 0.7rem !important;
   }
-  /* ------Service section End------- */
+
+  .bestsell-product-info .card-title {
+    font-size: 0.8rem;
+  }
+  .bestsell-product-info .card-price{
+    font-size: 0.9rem !important;
+    margin: 0;
+  }
+  .ratings svg{
+    font-size: 0.8rem;
+  }
+
+  /* ------BestSell section End------- */
+  /* ------Service&Offer section Start------- */
+  .service-cart-col {
+    border: 2px solid #fff;
+  }
+  .service-cart-col:last-child {
+    border: 2px solid #fff;
+  }
+  /* ------Service&Offer section End------- */
 
 }
 
-@media only screen and (max-width: 575px) {}
+@media only screen and (max-width: 575px) {
+  /* Top sec start  */
+  .top .container{
+    display: block !important;
+  }
+  /* Top sec End  */
+}
 
 @media only screen and (max-width: 300px) {}
