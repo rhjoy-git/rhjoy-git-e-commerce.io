@@ -95,7 +95,6 @@ body {
 .hero-sec {
   position: relative;
   overflow: hidden;
-  height: 85vh;
   width: 100vw;
 }
 
@@ -107,12 +106,12 @@ body {
   text-align: start;
   top: 20%;
   left: 20%;
-  right: 50%;
-
+  right: 45%;
+  overflow: hidden;
 }
 
 .banner-content h2 {
-  font-size: 3rem !important;
+  font-size: 3rem;
   letter-spacing: 0.2rem;
 }
 
@@ -137,15 +136,17 @@ body {
 }
 
 .carousel-indicators {
-  bottom: 50px;
+  bottom: 30px;
 }
+
 
 /* --------------------- */
 .card img {
   position: relative;
 }
 
-.bestsell-product-item {
+.bestsell-product-item,
+.product-item {
   border: none !important;
 }
 
@@ -171,7 +172,8 @@ body {
   width: 25px;
 }
 
-.bestsell-product-item:hover .card-icon {
+.bestsell-product-item:hover .card-icon,
+.product-item:hover .card-icon {
   opacity: 1;
 }
 
@@ -180,12 +182,14 @@ body {
   transform: scale(1.1);
 }
 
-.bestsell-product-info .card-title {
+.bestsell-product-info .card-title,
+.product-info .card-title {
   font-size: 0.95rem;
   font-weight: bold;
 }
 
-.bestsell-product-info .card-price {
+.bestsell-product-info .card-price,
+.product-info .card-price {
   color: #3cb878;
 }
 
@@ -198,12 +202,18 @@ body {
   font-size: 0.75rem;
 }
 
+/* --------------------------- */
 .service-cart-col {
   background: #f5f6f9;
   border-right: 2px solid #fff;
 }
+
 .service-cart-col:last-child {
   border: none;
+}
+
+.service-cart {
+  height: 100px;
 }
 
 .service-cart img {
@@ -218,13 +228,118 @@ body {
   font-size: 0.8rem;
   letter-spacing: 0.02rem;
 }
+
 /* ----------------- */
-.offer .offer-card:first-child, 
+.offer .offer-card:first-child,
 .offer .offer-card:last-child {
   background-color: #2e3348;
 
 }
-.offer .offer-card:nth-child(2){
+
+.offer .offer-card:nth-child(2) {
   background-color: #34394f;
 }
+
 /* ------------------ */
+
+
+
+/* --------- Footer ---------- */
+.footer {
+  background-color: #000;
+}
+
+.copy-right pre {
+  font-size: 0.8rem;
+}
+
+.bank-card-item {
+  margin: 0 4px;
+}
+
+.bank-card-item img {
+  width: 35px;
+}
+
+
+
+
+
+/* ============= Custrom Responsive =============== */
+
+@media only screen and (max-width: 1199px) {
+  /* ------hero section Start------- */
+  .banner-content {
+    top: 20%;
+  }
+  /* ------hero section End------- */
+  /* ------BestSell section Start------- */
+  .best-sell-info{
+    text-align: left;
+  }
+  /* ------BestSell section End------- */
+}
+
+@media only screen and (max-width: 991px) {
+
+  /* ------hero section Start------- */
+  .banner-content {
+    right: 30%;
+    top: 7%;
+  }
+  .banner-content p {
+    font-size: 1rem;
+  }
+  .banner-content h2 {
+    font-size: 2.5rem;
+  }
+  /* ------hero section End------- */
+  /* ------BestSell section Start------- */
+  .best-sell-info{
+    text-align: justify;
+    
+  }
+  .best-sell-info h2{
+    font-size: 1.65rem !important;
+    letter-spacing: 0.1rem !important;
+  }
+  /* ------BestSell section End------- */
+}
+
+@media only screen and (max-width: 767px) {
+
+  /* ------hero section Start------- */
+  .banner-content{
+    top: 0%;
+  }
+  .banner-content h2 {
+    font-size: 2rem;
+  }
+  .banner-content p {
+    font-size: 0.8rem !important;
+  }
+  .carousel-indicators{
+    display: none;
+  }
+  /* ------hero section End------- */
+  /* ------Service section Start------- */
+  .best-sell-info{
+    text-align: center;
+  }
+  .best-sell-info h2{
+    font-size: 1.5rem !important;
+    letter-spacing: 0 !important;
+  }
+  .best-sell-info h5{
+    font-size: 0.8rem !important;
+  }
+  .best-sell-info p{
+    font-size: 0.6rem !important;
+  }
+  /* ------Service section End------- */
+
+}
+
+@media only screen and (max-width: 575px) {}
+
+@media only screen and (max-width: 300px) {}
