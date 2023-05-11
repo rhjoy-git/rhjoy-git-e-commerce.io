@@ -1,0 +1,224 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: red;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.vertical-center {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+}
+
+/* -------------Top Start------------ */
+.top-contact-info a pre {
+    font-size: 0.8rem;
+    color: #fff;
+}
+
+.top-contact-info a svg,
+.top-social-icon a svg {
+    font-size: 0.8rem !important;
+    color: #fff;
+}
+
+.top-social-icon a {
+    margin: 0 0.2rem;
+    padding: 0 0.3rem;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.top-social-icon a:hover svg {
+    color: rgb(48, 110, 233);
+    transform: scale(1.2);
+}
+
+/* -------------Top End------------ */
+
+/* -----------Navbar Start----------- */
+.Home{
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.navbar-brand span {
+    color: #3cb878;
+}
+
+.badge-notification {
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+}
+
+.search-btn {
+    padding: .1rem .2rem;
+    font-size: 0.8rem;
+    margin-right: 0.3rem !important;
+}
+
+.search-input {
+    font-size: 0.8rem !important;
+    padding: 0 0.5rem !important;
+    margin: 0 0.1rem !important;
+}
+
+.nav-item {
+    font-weight: 600;
+    margin: 0 1rem;
+    transition: 0.3s;
+
+}
+
+.nav-item a,
+.nav-cart a svg {
+    color: black;
+}
+
+.nav-item a.active,
+.nav-item a:hover {
+    color: #3cb878;
+    transform: scale(1.05);
+}
+
+/* -----------Navbar End----------- */
+/* -------------Breadcrum Start------------- */
+/* -----------Breadcrum End------------- */
+
+/* --------------Discount Start------------- */
+.discount-footer p,
+.discount-social-icon a svg {
+    font-size: 0.85rem;
+    color: #000;
+}
+
+.discount-social-icon a:hover svg {
+    color: #0d6efd;
+    transform: scale(1.1);
+}
+
+.discount .row {
+    border: 2px solid #e7e9f0;
+}
+
+.discount-social-icon {
+    border-left: 2px solid #e7e9f0;
+    border-right: 2px solid #e7e9f0;
+}
+
+/* --------------Discount End------------- */
+
+/* -------------Information Start-------------- */
+.info-item li a,
+.info-item li span {
+    color: #000;
+    font-size: 0.8rem;
+}
+
+.info-item li a:hover {
+    text-decoration: underline;
+}
+
+.information .title {
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+}
+
+.info-item svg {
+    font-size: 0.75rem;
+}
+
+/* -------------Information End-------------- */
+/* --------- Footer Start---------- */
+.footer {
+    background-color: #000;
+}
+
+.copy-right pre {
+    font-size: 0.8rem;
+}
+
+.bank-card-item {
+    margin: 0 4px;
+}
+
+.bank-card-item img {
+    width: 35px;
+}
+
+/* --------- Footer End ---------- */
+/* ============= Custom Responsive =============== */
+
+@media only screen and (max-width: 1199px) {}
+
+@media only screen and (max-width: 991px) {
+
+    /* -----------discount------------ */
+    .discount-social-icon a svg {
+        font-size: 0.85rem;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+
+    /* -----------home------------ */
+    .nav-cart {
+        width: auto;
+    }
+
+    /* ---------discount---------- */
+    .discount-social-icon a svg {
+        font-size: 1rem;
+    }
+
+}
+
+@media only screen and (max-width: 575px) {
+/* ------------top--------------- */
+    .top .container {
+        display: block !important;
+    }
+
+    .top-social-icon {
+        text-align: center;
+    }
+
+    .nav-cart {
+        width: 100%;
+    }
+
+/* -------------information------------- */
+    .information {
+        text-align: center;
+    }
+
+    .information h5 {
+        margin: 5px 0 0 0;
+    }
+
+    .info-item:last-child li {
+        justify-content: center;
+    }
+}
+
+
+@media only screen and (max-width: 300px) {}
