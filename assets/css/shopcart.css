@@ -22,13 +22,21 @@ a {
 body {
     overflow-x: hidden;
 }
-
+.row, .col{
+    overflow: hidden;
+}
 .vertical-center {
     display: flex !important;
     justify-content: center;
     align-items: center;
 }
-
+.cart-size{
+    font-size: 0.9rem;
+    margin: 0;
+}
+.cart-size span{
+    color: #3cb878;
+}
 /* -------------Top Start------------ */
 .top-contact-info a pre {
     font-size: 0.8rem;
@@ -101,6 +109,49 @@ body {
 
 /* -----------Navbar End----------- */
 /* -------------Breadcrum Start------------- */
+.product-title{
+    text-align: center;
+}
+.product-title{
+    font-size: 0.8rem;
+}
+
+.product-title-row{
+    border: 1px solid #dee2e6;
+}
+.product-udpate-row,
+.product-info-row{
+    border-right: 1px solid #dee2e6;
+    border-left: 1px solid #dee2e6;
+    border-bottom: 1px solid #dee2e6;
+}
+.border-left{
+    border-left: 1px solid #dee2e6;
+}
+.cart-product img{
+    width: 15%;
+}
+.cart-product h5{
+    font-size: 0.8rem;
+}
+.product-udpate-row a {
+    font-weight: 600;
+    border: 1px solid transparent;
+    padding: .375rem 0.85rem !important;
+    font-size: 0.9rem;
+    border-radius: 0;
+    transition: 0.45s;
+}
+.product-udpate-row a:last-child {
+    color: #fff;
+    background-color: #3cb878;
+}
+.product-udpate-row a:hover {
+    background-color: #3cb878;
+    color: #fff;
+    border-radius: 1rem;
+    transform: scale(0.9);
+}
 /* -----------Breadcrum End------------- */
 
 /* --------------Discount Start------------- */
