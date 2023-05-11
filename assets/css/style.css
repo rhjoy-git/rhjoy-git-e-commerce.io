@@ -215,9 +215,6 @@ body {
   border: none;
 }
 
-.service-cart {
-  height: 100px;
-}
 
 .service-cart img {
   width: 35px;
@@ -449,6 +446,8 @@ body {
   /* ------Service&Offer section Start------- */
   .service-cart-col {
     border: 2px solid #fff;
+    width: 100%;
+    height: 100%;
   }
 
   .service-cart-col:last-child {
@@ -475,8 +474,8 @@ body {
 
   /* Top sec start  */
   .banner-content {
-    top: 0%;
-    left: 5;
+    top: 5%;
+    left: 5%;
     padding: 5px;
   }
 
