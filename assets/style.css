@@ -113,9 +113,11 @@ body {
   font-size: 3rem;
   letter-spacing: 0.2rem;
 }
-.banner-content p{
+
+.banner-content p {
   width: 75%;
 }
+
 .custom-btn {
   color: #6c757d;
   font-size: 0.8rem !important;
@@ -261,32 +263,38 @@ body {
 .bank-card-item img {
   width: 35px;
 }
+
 /* -------------------- */
-.left-col{
+.left-col {
   background: url(img/slide5.png) no-repeat;
   background-size: cover;
   width: 100%;
   padding: 50px 20px;
 }
-.get-discount-txt{
+
+.get-discount-txt {
   color: #fff;
   font-size: 1.8rem;
   font-weight: bold;
 }
-.discount-info{
+
+.discount-info {
   font-size: 0.8rem;
   color: aliceblue;
   padding: 0 50px;
 }
-.left-col form a{
+
+.left-col form a {
   font-size: 0.7rem;
   font-weight: bold;
   padding: 0.554rem;
 }
-.right-col{
+
+.right-col {
   background: #e7e9f0;
 }
-.right-col img{
+
+.right-col img {
   width: 55%;
   aspect-ratio: 3/2;
   object-fit: contain;
@@ -294,38 +302,46 @@ body {
 
 /* ------------------ */
 .discount-footer p,
-.discount-social-icon a svg{
+.discount-social-icon a svg {
   font-size: 0.85rem;
   color: #000;
 }
-.discount-social-icon a:hover svg{
+
+.discount-social-icon a:hover svg {
   color: #0d6efd;
   transform: scale(1.1);
 }
-.discount .row:nth-child(2){
+
+.discount .row:nth-child(2) {
   border-bottom: 2px solid #e7e9f0;
 }
-.discount-social-icon{
+
+.discount-social-icon {
   border-left: 2px solid #e7e9f0;
   border-right: 2px solid #e7e9f0;
 }
+
 /* --------------------------- */
 .info-item li a,
-.info-item li span{
+.info-item li span {
   color: #000;
   font-size: 0.8rem;
 }
-.info-item li a:hover{
+
+.info-item li a:hover {
   text-decoration: underline;
 }
-.information .title{
+
+.information .title {
   font-size: 0.85rem;
   font-weight: 700;
   letter-spacing: 0.1rem;
 }
-.info-item svg{
+
+.info-item svg {
   font-size: 0.75rem;
 }
+
 /* ============= Custom Responsive =============== */
 
 @media only screen and (max-width: 1199px) {
@@ -373,11 +389,12 @@ body {
 
   /* ------BestSell section End------- */
   /* ----------------------- */
-  .right-col div{
+  .right-col div {
     border: none;
   }
+
   /* ----------------------- */
-  .discount-social-icon a svg{
+  .discount-social-icon a svg {
     font-size: 0.85rem;
   }
 }
@@ -385,10 +402,6 @@ body {
 @media only screen and (max-width: 767px) {
 
   /* ------hero section Start------- */
-  .banner-content {
-    top: 0%;
-  }
-
   .banner-content h2 {
     font-size: 2rem;
   }
@@ -422,11 +435,13 @@ body {
   .bestsell-product-info .card-title {
     font-size: 0.8rem;
   }
-  .bestsell-product-info .card-price{
+
+  .bestsell-product-info .card-price {
     font-size: 0.9rem !important;
     margin: 0;
   }
-  .ratings svg{
+
+  .ratings svg {
     font-size: 0.8rem;
   }
 
@@ -435,26 +450,72 @@ body {
   .service-cart-col {
     border: 2px solid #fff;
   }
+
   .service-cart-col:last-child {
     border: 2px solid #fff;
   }
+
   /* ------Service&Offer section End------- */
   /* ------------------- */
-  .right-col div{
+  .right-col div {
     border: 2px solid #fff;
   }
+
   /* ------------------- */
-  .discount-social-icon a svg{
+  .discount-social-icon a svg {
     font-size: 1rem;
+  }
+
+  .nav-cart {
+    width: auto;
   }
 }
 
 @media only screen and (max-width: 575px) {
+
   /* Top sec start  */
-  .top .container{
+  .banner-content {
+    top: 0%;
+    left: 5;
+    padding: 5px;
+  }
+
+  .banner-content h2 {
+    font-size: 1rem;
+    margin: 0;
+  }
+
+  .banner-content p {
+    font-size: 0.5rem !important;
+    margin: 2px 0;
+  }
+  .custom-btn{
+    font-size: 0.5rem !important;
+    padding: 3px !important;
+  }
+  .top .container {
     display: block !important;
   }
+
+  .top-social-icon {
+    text-align: center;
+  }
+
+  .nav-cart {
+    width: 100%;
+  }
+
   /* Top sec End  */
+
+  .information{
+    text-align: center;
+  }
+  .information h5{
+    margin: 5px 0 0 0;
+  }
+  .info-item:last-child li{
+    justify-content: center;
+  }
 }
 
 @media only screen and (max-width: 300px) {}
