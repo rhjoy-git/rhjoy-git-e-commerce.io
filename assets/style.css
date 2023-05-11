@@ -291,11 +291,16 @@ body {
   aspect-ratio: 3/2;
   object-fit: contain;
 }
+
 /* ------------------ */
 .discount-footer p,
 .discount-social-icon a svg{
   font-size: 0.85rem;
   color: #000;
+}
+.discount-social-icon a:hover svg{
+  color: #0d6efd;
+  transform: scale(1.1);
 }
 .discount .row:nth-child(2){
   border-bottom: 2px solid #e7e9f0;
@@ -367,6 +372,14 @@ body {
   }
 
   /* ------BestSell section End------- */
+  /* ----------------------- */
+  .right-col div{
+    border: none;
+  }
+  /* ----------------------- */
+  .discount-social-icon a svg{
+    font-size: 0.85rem;
+  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -426,7 +439,14 @@ body {
     border: 2px solid #fff;
   }
   /* ------Service&Offer section End------- */
-
+  /* ------------------- */
+  .right-col div{
+    border: 2px solid #fff;
+  }
+  /* ------------------- */
+  .discount-social-icon a svg{
+    font-size: 1rem;
+  }
 }
 
 @media only screen and (max-width: 575px) {
