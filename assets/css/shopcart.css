@@ -153,7 +153,37 @@ body {
     transform: scale(0.9);
 }
 /* -----------Breadcrum End------------- */
+/* -------------Coupon Start-------------- */
+.input-group{
+    margin-top: 0.23rem;
+}
+.input-group input:focus {
+    box-shadow: none;
+}
+.coupon-col h5{
+    font-size: 1.1rem !important;
+    margin: 1rem 0;
+}
+.coupon-col span{
+    color: #373839;
+    font-size: 0.75rem !important;
+    margin-bottom: 500px !important;
+}
 
+.input-group input{
+    border-radius: 0;
+    padding: .375rem .9rem;
+}
+.input-group input::placeholder{
+    font-size: 0.75rem;
+    color: #6c757d;
+}
+.input-group a{
+    border-radius: 0;
+    padding: 0.375rem 2rem;
+    font-size: 0.95rem;
+}
+/* -------------Coupon End-------------- */
 /* --------------Discount Start------------- */
 .discount-footer p,
 .discount-social-icon a svg {
