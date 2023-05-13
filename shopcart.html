@@ -171,13 +171,13 @@
             <div class="row product-udpate-row mx-md-2 mx-lg-5">
                 <div class="col-md-6 offset-md-6  py-md-2 vertical-center">
                     <a class="btn border" href="">UPDATE CART</a>
-                    <a class="btn border ms-md-3" href="">CONTINUE SHOPPUNG</a>
+                    <a class="btn border ms-md-3" href="">CONTINUE SHOPPING</a>
                 </div>
             </div>
         </div>
     </section>
     <!-- =============== Product section End ============= -->
-    <!-- =============== Cupon & Voucher section Start ============= -->
+    <!-- =============== Cupon & Voucher & shipping address section Start ============= -->
     <section class="voucher py-3 py-md-5 px-lg-5">
         <div class="container px-lg-5">
             <div class="row">
@@ -190,15 +190,80 @@
                         <a class="btn btn-success input-group-text" id="coupon" href="#" type="button">APPLY</a>
                     </div>
                 </div>
-            <div class="coupon-col col-12 col-md-6 px-lg-5 px-md-2 px-1">
-                <h5>Use Gift Voucher</h5>
-                <span class="mb-2">Enter Your Voucher Code Here</span>
-                <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Enter your voucher here" aria-label="coupon"
-                        aria-describedby="coupon">
-                    <a class="btn btn-success input-group-text" id="coupon" href="#" type="button">APPLY</a>
+                <div class="coupon-col col-12 col-md-6 px-lg-5 px-md-2 px-1">
+                    <h5>Use Gift Voucher</h5>
+                    <span class="mb-2">Enter Your Voucher Code Here</span>
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Enter your voucher here"
+                            aria-label="coupon" aria-describedby="coupon">
+                        <a class="btn btn-success input-group-text" id="coupon" href="#" type="button">APPLY</a>
+                    </div>
                 </div>
             </div>
+            <div class="row pt-2 pt-md-3 pt-lg-5">
+                <div class="col-md-6 col-sm-12 col-12 px-lg-5 px-md-2 px-1">
+                    <div class="shippingAddress">
+                        <h5>SHIPPING AVAILABILITY</h5>
+                        <div class="select-country mb-1 mb-md-2 mb-lg-3">
+                            <span class="mb-2">Select Country</span>
+                            <select name="Country" class="country form-select" aria-label="Default select example">
+                                <option selected>Bangladesh</option>
+                                <option value="1">India</option>
+                                <option value="2">Viet Nam</option>
+                                <option value="3">China</option>
+                                <option value="4">America</option>
+                                <option value="5">UK</option>
+                            </select>
+                        </div>
+                        <div class="select-state mb-1 mb-md-2 mb-lg-3">
+                            <span class="mb-2">Select State</span>
+                            <select name="state" class="state form-select" aria-label="Default select example">
+                                <option selected>Bangladesh</option>
+                                <option value="1">India</option>
+                                <option value="2">Viet Nam</option>
+                                <option value="3">China</option>
+                                <option value="4">America</option>
+                                <option value="5">UK</option>
+                            </select>
+                        </div>
+                        <div class="select-post-code mb-1 mb-md-2 mb-lg-3">
+                            <span class="mb-2">Postcode / Zip</span>
+                            <input type="number" class="postcode form-control" placeholder="Postcode / Zip"
+                                aria-label="coupon" aria-describedby="coupon">
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12 col-12 px-lg-5 px-md-2 px-1">
+                    <div class="shoppingcartcalculation">
+                        <h5>SHIPPING CART CALCULATION</h5>
+                        <div class="row border m-0 mt-4">
+                            <div class="col-12 px-lg-4 px-md-2 p-1 py-3 vertical-center justify-content-between">
+                                <span class="subtotalcost-title">Subtotal</span>
+                                <span class="subtotal-amount">$450</span>
+                            </div>
+                            <div class="col-12 px-lg-4 px-md-2 p-1 py-3 vertical-center justify-content-between">
+                                <span class="coupon-title">Coupon</span>
+                                <span class="discount-amount">-$50</span>
+                            </div>
+                            <div class="col-12 px-lg-4 px-md-2 p-1 py-3 vertical-center justify-content-between">
+                                <span class="shiping-title">Shipping</span>
+                                <span class="shipping-title">Free shipping</span>
+                            </div>
+                            
+                            <div class="col-12 px-lg-4 px-md-2 p-1 py-3 border-top vertical-center justify-content-between">
+                                <span class="total-title">Total</span>
+                                <span class="total-amount">$400</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row cart-btn pt-2">
+                <div class="col-md-12 px-lg-5 px-md-2 px-1 justify-content-between vertical-center">
+                    <a class="btn border" href="">UPDATE TOTAL</a>
+                    <a class="btn border ms-md-3" href="">PROCEED TO CHECKOUT</a>
+                </div>
             </div>
         </div>
     </section>
