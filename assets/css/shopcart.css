@@ -243,7 +243,17 @@ body {
 .total-amount {
     font-style: 1rem;
 }
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
 /* -------------Coupon End-------------- */
 /* --------------Discount Start------------- */
 .discount-footer p,
@@ -331,6 +341,12 @@ body {
     .discount-social-icon a svg {
         font-size: 1rem;
     }
+    /* ------------------ */
+    .coupon-col h5,
+    .shoppingcartcalculation h5,
+    .shippingAddress h5{
+        text-align: left;
+    }
 
 }
 
@@ -360,6 +376,26 @@ body {
 
     .info-item:last-child li {
         justify-content: center;
+    }
+    /* ---------------------------- */
+    .product-title-row{
+        display: none;
+    }
+    .cart-product{
+        display: block !important;
+        text-align: center;
+
+    }
+    .cart-product img{
+        width: 40%;
+    }
+    .coupon-col h5,
+    .shoppingcartcalculation h5,
+    .shippingAddress h5{
+        text-align: center;
+    }
+    .product-udpate-row{
+        border: none;
     }
 }
 
