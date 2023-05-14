@@ -133,6 +133,7 @@ input::placeholder {
     padding: 0.375rem 2rem;
     font-size: 0.95rem;
 }
+
 label {
     font-size: 0.8rem;
     font-weight: 600;
@@ -144,10 +145,12 @@ input::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
+
 /* Firefox */
 input[type=number] {
     -moz-appearance: textfield;
 }
+
 /* --------------Billing address End------------- */
 
 /* -------------Information Start-------------- */
@@ -193,24 +196,9 @@ input[type=number] {
 /* --------- Footer End ---------- */
 /* ============= Custom Responsive =============== */
 
-@media only screen and (max-width: 1200px) {
-    .cart-product img {
-        width: 30%;
-    }
-}
+@media only screen and (max-width: 1200px) {}
 
-@media only screen and (max-width: 992px) {
-
-    /* -----------discount------------ */
-    .discount-social-icon a svg {
-        font-size: 0.85rem;
-    }
-
-    /* --------------cart img------------- */
-    .cart-product img {
-        width: 50%;
-    }
-}
+@media only screen and (max-width: 992px) {}
 
 @media only screen and (max-width: 768px) {
 
@@ -219,34 +207,13 @@ input[type=number] {
         width: auto;
     }
 
-    /* ---------discount---------- */
-    .discount-social-icon a svg {
-        font-size: 1rem;
+    /* ------------------- */
+    .first-name-div,
+    .last-name-div,
+    .mailphn,
+    .phone-div {
+        width: 50% !important;
     }
-
-    /* ------------------ */
-    .coupon-col h5,
-    .shoppingcartcalculation h5,
-    .shippingAddress h5 {
-        text-align: left;
-    }
-
-    .cart-product h5,
-    .cart-size {
-        font-size: 0.7rem;
-    }
-
-    .cart-price,
-    .cart-total-price,
-    .cart-quantity {
-        font-size: 0.8rem;
-    }
-    .cart-btn a, .product-udpate-row a {
-        padding: .2rem 0.5rem !important;
-        font-size: 0.7rem;
-      }
-
-
 }
 
 @media only screen and (max-width: 576px) {
@@ -277,37 +244,18 @@ input[type=number] {
         justify-content: center;
     }
 
-    /* ---------------------------- */
-    .product-title-row {
-        display: none;
-    }
-
-    .cart-product {
+    /* --------------------------- */
+    .mailphn,
+    .fullname {
         display: block !important;
-        text-align: center;
-
     }
 
-    .cart-product img {
-        width: 40%;
-    }
-
-    .coupon-col h5,
-    .shoppingcartcalculation h5,
-    .shippingAddress h5 {
-        text-align: center;
-    }
-
-    .product-udpate-row {
-        border: none;
-    }
-    .product-info-row .border-left{
-        border: none !important;
-    }
-    .cart-quantity{
+    .first-name-div,
+    .last-name-div,
+    .mailphn,
+    .phone-div {
         width: 100% !important;
     }
-    /* --------------------------- */
 }
 
 
