@@ -311,7 +311,8 @@ input[type=number] {
     background-color: #000;
 }
 
-.copy-right pre {
+.copy-right p {
+    text-align: center;
     font-size: 0.8rem;
 }
 
@@ -436,6 +437,9 @@ input[type=number] {
     }
     .product-info-row .border-left{
         border: none !important;
+    }
+    .cart-quantity{
+        width: 100% !important;
     }
     /* --------------------------- */
 }
