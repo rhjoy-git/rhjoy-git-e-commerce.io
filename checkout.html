@@ -54,7 +54,8 @@
                     </ul>
                 </div>
                 <div class="nav-cart py-1 py-sm-0 vertical-center">
-                    <a class="mx-2 small position-relative" href="shopcart.html"><i class="fa-solid fa-cart-shopping"></i>
+                    <a class="mx-2 small position-relative" href="shopcart.html"><i
+                            class="fa-solid fa-cart-shopping"></i>
                         <span class="badge rounded-pill badge-notification bg-danger">1</span>
                     </a>
                     <a class="mx-2 small " href="#">
@@ -90,20 +91,23 @@
                 </nav>
                 <!-- ---------------Breadcrumb end-------------- -->
                 <div class="col-md-6 col-12">
-                    <h5 class="address-title my-sm-2 my-1">Biling Address</h5>
+                    <h5 class="address-title my-sm-2 my-1">BILING DETAILS</h5>
 
                     <div class="fullname vertical-center justify-content-between">
                         <div class="first-name-div pe-md-2 pe-0 w-50">
-                            <label for="firstname" class="form-label">First Name<span class="text-danger fs-6">*</span></label>
+                            <label for="firstname" class="form-label">First Name<span
+                                    class="text-danger fs-6">*</span></label>
                             <input type="text" id="firstname" class="form-control" required>
                         </div>
                         <div class="last-name-div ps-md-2 ps-0 w-50">
-                            <label for="lastname" class="form-label">Last Name<span class="text-danger fs-6">*</span></label>
+                            <label for="lastname" class="form-label">Last Name<span
+                                    class="text-danger fs-6">*</span></label>
                             <input type="text" id="lastname" class="form-control" required>
                         </div>
                     </div>
                     <div class="select-country my-sm-2 my-1">
-                        <label for="country" class="form-label">Select Country<span class="text-danger fs-6">*</span></label>
+                        <label for="country" class="form-label">Select Country<span
+                                class="text-danger fs-6">*</span></label>
                         <select name="Country" id="country" class="country form-select"
                             aria-label="Default select example" required>
                             <option selected>Bangladesh</option>
@@ -130,31 +134,113 @@
                         <label for="city" class="form-label">Town / City<span class="text-danger fs-6">*</span></label>
                         <input type="text" id="city" class="form-control" placeholder="Town / City" required>
                     </div>
-                    <div class="contact vertical-center justify-content-between">
+                    <div class="contactmailphn vertical-center justify-content-between">
                         <div class="mail-div pe-md-2 pe-0 w-50">
-                            <label for="formail" class="form-label">E-mail<span class="text-danger fs-6">*</span></label>
+                            <label for="formail" class="form-label">E-mail<span
+                                    class="text-danger fs-6">*</span></label>
                             <input type="email" id="formail" class="form-control" required>
                         </div>
                         <div class="phone-div ps-md-2 ps-0 w-50">
-                            <label for="forphnnumber" class="form-label">Phone<span class="text-danger fs-6">*</span></label>
+                            <label for="forphnnumber" class="form-label">Phone<span
+                                    class="text-danger fs-6">*</span></label>
                             <input type="number" id="forphnnumber" class="form-control" required>
                         </div>
                     </div>
 
+                </div>
+
+                <div class="col-md-6 col-12 px-md-2 pt-md-2 px-lg-3 pt-lg-3 p-sm-1 mt-3 mt-md-0 border border-2">
+                    <div class="yourOrder px-md-2 pt-md-2 px-md-3 pt-md-3 p-sm-2 p-1">
+                        <h5 class="order-title">YOUR ORDER</h5>
+
+                        <div class="totalProduct vertical-center justify-content-between border-bottom py-2">
+                            <span class="product">Product</span>
+                            <span class="total">Total</span>
+                        </div>
+                        <div class="product-info py-md-3">
+                            <div class="product-info py-1 vertical-center justify-content-between">
+                                <p class="product-title">Casual men wearing cool shoe x <span class="number">1</span>
+                                </p>
+                                <span class="product-total-amount">$120</span>
+                            </div>
+                            <div class="product-info py-1 vertical-center justify-content-between">
+                                <p class="product-title">Casual men wearing x <span class="number">2</span></p>
+                                <span class="product-total-amount">$280</span>
+                            </div>
+                        </div>
+
+                        <div class="cost-shipping-info py-md-3 py-2 border-top">
+                            <div class="subtotal-cost py-1 vertical-center justify-content-between">
+                                <span class="subtotal">Subtotal</span>
+                                <span class="cost">$400</span>
+                            </div>
+                            <div class="shipping py-1 vertical-center justify-content-between">
+                                <span class="shipping-status">Shipping</span>
+                                <span class="shipping-cost">Free Shipping</span>
+                            </div>
+                        </div>
+
+
+                        <div class="total-cost-info py-md-3 py-2 vertical-center justify-content-between border-top">
+                            <span class="total">Total</span>
+                            <span class="total-cost">$400</span>
+                        </div>
+                    </div>
+                    <div class="payment-method px-md-3 pt-md-3 px-2 pt-2 border-top border-2">
+                        <div class="bank-transfer">
+                            <input type="checkbox" id="bank-transfer">
+                            <label for="bank-transfer">Direct Bank Transfer</label>
+                            <p class="fw-bold my-md-2 my-1 py-md-3 py-2 px-md-4 px-3">Make your payment directly into our bank account.
+                                Please use your Order ID as the payment reference-
+                                Your order won't be shipped until the funds have
+                                cleared in our account.
+                            </p>
+                        </div>
+                        <div class="Cheque-payment py-md-2 py-1">
+                            <input type="checkbox" id="chequePayment">
+                            <label for="chequePayment">Cheque Payment</label>
+                        </div>
+                        <div class="paypal-payment py-md-2 py-1">
+                            <input type="checkbox" id="paypal">
+                            <label for="paypal">PayPal</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="account-orderBtn py-md-2 py-sm-1 mt-2 mt-sm-0 my-0 vertical-center justify-content-between">
                     <div class="create-account my-sm-2 my-1">
                         <input type="checkbox" name="account" id="createaccount" required>
                         <label for="createaccount">Create an account?</label>
                     </div>
+                    <div class="order-place">
+                        <a type="submit" href="#" class="btn btn-success">PLACE ORDER</a>
+                    </div>
+                </div>
 
-                </div>
-                <div class="col-md-6 col-12">
-                    <h5 class="order-title"></h5>
-                </div>
             </div>
         </div>
     </section>
     <!-- =============== Address & Order section End ============= -->
 
+    <!-- =============== Discount section Start ============= -->
+    <section class="discount my-1">
+        <div class="row vertical-center discount-footer gx-0">
+            <div class="col-lg-7 col-md-7 col-sm-8 py-sm-1 py-md-0 text-center">
+                <p class="m-0 py-2">We're confident we've provided all the best for you. Stay connect with us</p>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-8">
+                <div class="py-2 discount-social-icon vertical-center justify-content-around">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-behance"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-auto"></div>
+        </div>
+    </section>
+    <!-- =============== Discount section End ============= -->
 
     <!-- ============ PageInfo section Start ============ -->
     <section class="pageinfo py-md-5 mb-md-5 py-3">

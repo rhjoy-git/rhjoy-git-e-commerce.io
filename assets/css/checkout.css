@@ -34,6 +34,7 @@ body {
     align-items: center;
 }
 
+
 /* -------------Top Start------------ */
 .top-contact-info a pre {
     font-size: 0.8rem;
@@ -112,7 +113,15 @@ body {
 }
 
 /* -----------Breadcrum End------------- */
+
 /* -------------Biling Address Start-------------- */
+.address-title,
+.order-title {
+    font-size: 0.85rem;
+    margin-bottom: 0.9rem !important;
+    font-weight: bold;
+}
+
 .form-select:focus,
 input:focus {
     box-shadow: none !important;
@@ -128,15 +137,24 @@ input::placeholder {
     color: #6c757d;
 }
 
-.input-group a {
-    border-radius: 0;
-    padding: 0.375rem 2rem;
-    font-size: 0.95rem;
-}
-
+.yourOrder span,
+.yourOrder p,
 label {
     font-size: 0.8rem;
     font-weight: 600;
+    margin: 0;
+    font-weight: bold;
+}
+
+.total-cost-info span {
+    font-size: 1rem;
+}
+
+.bank-transfer p {
+    color: #79797a;
+    background-color: #f6f7fb;
+    font-size: 0.75rem;
+    width: 80%;
 }
 
 /* Chrome, Safari, Edge, Opera */
@@ -152,7 +170,28 @@ input[type=number] {
 }
 
 /* --------------Billing address End------------- */
+/* --------------Discount Start------------- */
+.discount-footer p,
+.discount-social-icon a svg {
+    font-size: 0.85rem;
+    color: #000;
+}
 
+.discount-social-icon a:hover svg {
+    color: #0d6efd;
+    transform: scale(1.1);
+}
+
+.discount .row {
+    border: 2px solid #e7e9f0;
+}
+
+.discount-social-icon {
+    border-left: 2px solid #e7e9f0;
+    border-right: 2px solid #e7e9f0;
+}
+
+/* --------------Discount End------------- */
 /* -------------Information Start-------------- */
 .info-item li a,
 .info-item li span {
@@ -172,6 +211,19 @@ input[type=number] {
 
 .info-item svg {
     font-size: 0.75rem;
+}
+
+.order-place .btn {
+    border-radius: 0;
+    font-size: 0.8rem;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.order-place .btn:hover {
+    transform: scale(1.1);
+    color: #3cb878;
+    background-color: #ffffff;
 }
 
 /* -------------Information End-------------- */
@@ -195,16 +247,26 @@ input[type=number] {
 
 /* --------- Footer End ---------- */
 /* ============= Custom Responsive =============== */
-
 @media only screen and (max-width: 1200px) {}
 
-@media only screen and (max-width: 992px) {}
+@media only screen and (max-width: 992px) {
+
+    /* -----------discount------------ */
+    .discount-social-icon a svg {
+        font-size: 0.85rem;
+    }
+}
 
 @media only screen and (max-width: 768px) {
 
     /* -----------home------------ */
     .nav-cart {
         width: auto;
+    }
+
+    /* ---------discount---------- */
+    .discount-social-icon a svg {
+        font-size: 1rem;
     }
 
     /* ------------------- */
@@ -245,7 +307,8 @@ input[type=number] {
     }
 
     /* --------------------------- */
-    .fullname, .contact {
+    .fullname,
+    .contactmailphn {
         display: block !important;
     }
 
