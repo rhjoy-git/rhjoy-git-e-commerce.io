@@ -245,14 +245,13 @@ input[type=number] {
     }
 
     /* --------------------------- */
-    .mailphn,
-    .fullname {
+    .fullname, .contact {
         display: block !important;
     }
 
     .first-name-div,
     .last-name-div,
-    .mailphn,
+    .mail-div,
     .phone-div {
         width: 100% !important;
     }
