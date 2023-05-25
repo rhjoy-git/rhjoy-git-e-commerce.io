@@ -10,6 +10,10 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--owl.carousel.css-->
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+
 
     <link rel="stylesheet" href="assets/css/style.css">
     <title>ecommerce</title>
@@ -85,7 +89,7 @@
                     aria-label="Slide 3"></button>
             </div>
             <div class="carousel-inner">
-                <div class="carousel-item active">
+                <div class="carousel-item cust-crsl-item active">
                     <img src="assets/img/banner.png" class="img-fluid d-block w-100" alt="...">
                     <div class="banner-content">
                         <h2 class="fw-bolder text-muted">THE BEST <br><span style="color: #3cb878;">WOOCOMMERCE</span>
@@ -96,7 +100,7 @@
                         <a class="btn custom-btn" href="#" role="button">BUY NOW</a>
                     </div>
                 </div>
-                <div class="carousel-item">
+                <div class="carousel-item cust-crsl-item">
                     <img src="assets/img/banner.png" class="img-fluid d-block w-100" alt="...">
                     <div class="banner-content">
                         <h2 class="fw-bolder text-muted">THE BEST <br><span style="color: #3cb878;">WOOCOMMERCE</span>
@@ -107,7 +111,7 @@
                         <a class="btn custom-btn" href="#" role="button">BUY NOW</a>
                     </div>
                 </div>
-                <div class="carousel-item">
+                <div class="carousel-item cust-crsl-item">
                     <img src="assets/img/banner.png" class="img-fluid d-block w-100" alt="...">
                     <div class="banner-content">
                         <h2 class="fw-bolder text-muted">THE BEST <br><span style="color: #3cb878;">WOOCOMMERCE</span>
@@ -133,7 +137,7 @@
     </section>
     <!-- ============== Hero section End ============== -->
     <!-- =========== Bestsell section Start ========== -->
-    <section class="bestsell my-2 py-sm-4 pt-4 pt-sm-0">
+    <section class="bestsell my-2 py-md-4 pt-4 pt-sm-0">
         <div class="container-fluid">
             <div class="row vertical-center">
                 <div class="col-10 col-lg-3 col-md-4 col-sm-10 offset-md-1 offset-lg-0">
@@ -262,30 +266,30 @@
     <!-- ============ Bestsell section End ============ -->
     <!-- ============ Service section Start ============ -->
     <section class="serviceOffer">
-        <div class="row service mt-5 vertical-center gx-0">
+        <div class="row service mt-5 vertical-center gx-0  owl-carousel owl-theme" id="serviceOffer">
             <div class="col-12 col-md-3 col-sm-6 py-4 vertical-center service-cart-col">
-                <div class="service-cart py-1 vertical-center flex-column">
+                <div class="item service-cart py-1 vertical-center flex-column">
                     <img class="img-fluid pt-xxl-3" src="assets/img/diamond.png" alt="">
                     <h3 class="fs-6 fw-bold m-0 mt-3">SPECIAL OFFERS</h3>
                     <span class="fw-bold text-muted">Shop Big Save Big</span>
                 </div>
             </div>
             <div class="col-12 col-md-3 col-sm-6 py-4 vertical-center service-cart-col">
-                <div class="service-cart py-1 vertical-center flex-column">
+                <div class="item service-cart py-1 vertical-center flex-column">
                     <img class="img-fluid pt-xxl-3" src="assets/img/plane 2.png" alt="">
                     <h3 class="fs-6 fw-bold m-0 mt-3">FREE DELIVERY</h3>
                     <span class="fw-bold text-muted">On Orders Above $99</span>
                 </div>
             </div>
             <div class="col-12 col-md-3 col-sm-6 py-4 vertical-center service-cart-col">
-                <div class="service-cart py-1 vertical-center flex-column">
+                <div class="item service-cart py-1 vertical-center flex-column">
                     <img class="img-fluid pt-xxl-3" src="assets/img/share.png" alt="">
                     <h3 class="fs-6 fw-bold m-0 mt-3">30 DAYS RETURN</h3>
                     <span class="fw-bold text-muted">Policy We Offers</span>
                 </div>
             </div>
             <div class="col-12 col-md-3 col-sm-6 py-4 vertical-center service-cart-col">
-                <div class="service-cart vertical-center flex-column">
+                <div class="item service-cart vertical-center flex-column">
                     <img class="img-fluid" src="assets/img/rocket.png" alt="">
                     <h3 class="fs-6 fw-bold mt-3">FASTER SHIPPING</h3>
                     <span class="fw-bold text-muted">2 Days Express</span>
@@ -293,7 +297,7 @@
             </div>
         </div>
         <!-- service row complete  -->
-        <div class="row offer vertical-center mb-5 gx-0">
+        <div class="row offer vertical-center my-sm-2 mb-md-5 gx-0">
             <div class="col-md-4 col-sm-4 col-12 my-1 my-sm-0 mb-sm-0 vertical-center offer-card py-4">
                 <div class="offer-box vertical-center py-5">
                     <img class="img-fluid w-75" src="assets/img/cart3.png" alt="">
@@ -318,11 +322,11 @@
                 <h2 class="product-header-title fs-3 fw-bold">FEATURED PRODUCTS</h2>
                 <p class="small text-success fst-italic">Newest trends from top brands</p>
             </div>
-            <div class="row my-5 vertical-center">
-                <div class="col-6 col-md-3 col-xl-2 mb-md-2 mb-lg-1 col-sm-6 product-box">
+            <div class="row my-2 my-sm-5 vertical-center">
+                <div class="col-6 col-md-3 col-xl-2 mb-md-2 mb-lg-1 col-sm-4 product-box">
                     <div class="card product-item">
-                        <a href="product-name.html"><img class="card-img-top img-fluid"
-                                src="assets/img/addcart.png" alt=""></a>
+                        <a href="product-name.html"><img class="card-img-top img-fluid" src="assets/img/addcart.png"
+                                alt=""></a>
                         <div class="card-body p-0 py-2">
                             <div class="card-icon">
                                 <ul class="vertical-center flex-column">
@@ -349,10 +353,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-6 col-md-3 col-xl-2 mb-md-2 mb-lg-1 col-sm-6 product-box">
+                <div class="col-6 col-md-3 col-xl-2 mb-md-2 mb-lg-1 col-sm-4 product-box">
                     <div class="card product-item">
-                        <a href="product-name.html"><img class="card-img-top img-fluid"
-                                src="assets/img/addcart.png" alt=""></a>
+                        <a href="product-name.html"><img class="card-img-top img-fluid" src="assets/img/addcart.png"
+                                alt=""></a>
                         <div class="card-body p-0 py-2">
                             <div class="card-icon">
                                 <ul class="vertical-center flex-column">
@@ -379,10 +383,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-6 col-md-3 col-xl-2 mb-md-2 mb-lg-1 col-sm-6 product-box">
+                <div class="col-6 col-md-3 col-xl-2 mb-md-2 mb-lg-1 col-sm-4 product-box">
                     <div class="card product-item">
-                        <a href="product-name.html"><img class="card-img-top img-fluid"
-                                src="assets/img/addcart.png" alt=""></a>
+                        <a href="product-name.html"><img class="card-img-top img-fluid" src="assets/img/addcart.png"
+                                alt=""></a>
                         <div class="card-body p-0 py-2">
                             <div class="card-icon">
                                 <ul class="vertical-center flex-column">
@@ -409,10 +413,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-6 col-md-3 col-xl-2 mb-md-2 mb-lg-1 col-sm-6 product-box">
+                <div class="col-6 col-md-3 col-xl-2 mb-md-2 mb-lg-1 col-sm-4 product-box">
                     <div class="card product-item">
-                        <a href="product-name.html"><img class="card-img-top img-fluid"
-                                src="assets/img/addcart.png" alt=""></a>
+                        <a href="product-name.html"><img class="card-img-top img-fluid" src="assets/img/addcart.png"
+                                alt=""></a>
                         <div class="card-body p-0 py-2">
                             <div class="card-icon">
                                 <ul class="vertical-center flex-column">
@@ -439,10 +443,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-6 col-md-3 col-xl-2 mb-md-2 mb-lg-1 col-sm-6 product-box">
+                <div class="col-6 col-md-3 col-xl-2 mb-md-2 mb-lg-1 col-sm-4 product-box">
                     <div class="card product-item">
-                        <a href="product-name.html"><img class="card-img-top img-fluid"
-                                src="assets/img/addcart.png" alt=""></a>
+                        <a href="product-name.html"><img class="card-img-top img-fluid" src="assets/img/addcart.png"
+                                alt=""></a>
                         <div class="card-body p-0 py-2">
                             <div class="card-icon">
                                 <ul class="vertical-center flex-column">
@@ -469,10 +473,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-6 col-md-3 col-xl-2 mb-md-2 mb-lg-1 col-sm-6 product-box">
+                <div class="col-6 col-md-3 col-xl-2 mb-md-2 mb-lg-1 col-sm-4 product-box">
                     <div class="card product-item">
-                        <a href="product-name.html"><img class="card-img-top img-fluid"
-                                src="assets/img/addcart.png" alt=""></a>
+                        <a href="product-name.html"><img class="card-img-top img-fluid" src="assets/img/addcart.png"
+                                alt=""></a>
                         <div class="card-body p-0 py-2">
                             <div class="card-icon">
                                 <ul class="vertical-center flex-column">
@@ -499,10 +503,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-6 col-md-3 col-xl-2 mb-md-2 mb-lg-1 col-sm-6 product-box">
+                <div class="col-6 col-md-3 col-xl-2 mb-md-2 mb-lg-1 col-sm-4 product-box">
                     <div class="card product-item">
-                        <a href="product-name.html"><img class="card-img-top img-fluid"
-                                src="assets/img/addcart.png" alt=""></a>
+                        <a href="product-name.html"><img class="card-img-top img-fluid" src="assets/img/addcart.png"
+                                alt=""></a>
                         <div class="card-body p-0 py-2">
                             <div class="card-icon">
                                 <ul class="vertical-center flex-column">
@@ -529,10 +533,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-6 col-md-3 col-xl-2 mb-md-2 mb-lg-1 col-sm-6 product-box">
+                <div class="col-6 col-md-3 col-xl-2 mb-md-2 mb-lg-1 col-sm-4 product-box">
                     <div class="card product-item">
-                        <a href="product-name.html"><img class="card-img-top img-fluid"
-                                src="assets/img/addcart.png" alt=""></a>
+                        <a href="product-name.html"><img class="card-img-top img-fluid" src="assets/img/addcart.png"
+                                alt=""></a>
                         <div class="card-body p-0 py-2">
                             <div class="card-icon">
                                 <ul class="vertical-center flex-column">
@@ -559,10 +563,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-6 col-md-3 col-xl-2 mb-md-2 mb-lg-1 col-sm-6 product-box">
+                <div class="col-6 col-md-3 col-xl-2 mb-md-2 mb-lg-1 col-sm-4 product-box">
                     <div class="card product-item">
-                        <a href="product-name.html"><img class="card-img-top img-fluid"
-                                src="assets/img/addcart.png" alt=""></a>
+                        <a href="product-name.html"><img class="card-img-top img-fluid" src="assets/img/addcart.png"
+                                alt=""></a>
                         <div class="card-body p-0 py-2">
                             <div class="card-icon">
                                 <ul class="vertical-center flex-column">
@@ -589,10 +593,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-6 col-md-3 col-xl-2 mb-md-2 mb-lg-1 col-sm-6 product-box">
+                <div class="col-6 col-md-3 col-xl-2 mb-md-2 mb-lg-1 col-sm-4 product-box">
                     <div class="card product-item">
-                        <a href="product-name.html"><img class="card-img-top img-fluid"
-                                src="assets/img/addcart.png" alt=""></a>
+                        <a href="product-name.html"><img class="card-img-top img-fluid" src="assets/img/addcart.png"
+                                alt=""></a>
                         <div class="card-body p-0 py-2">
                             <div class="card-icon">
                                 <ul class="vertical-center flex-column">
@@ -619,10 +623,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-6 col-md-3 col-xl-2 mb-md-2 mb-lg-1 col-sm-6 product-box">
+                <div class="col-6 col-md-3 col-xl-2 mb-md-2 mb-lg-1 col-sm-4 product-box">
                     <div class="card product-item">
-                        <a href="product-name.html"><img class="card-img-top img-fluid"
-                                src="assets/img/addcart.png" alt=""></a>
+                        <a href="product-name.html"><img class="card-img-top img-fluid" src="assets/img/addcart.png"
+                                alt=""></a>
                         <div class="card-body p-0 py-2">
                             <div class="card-icon">
                                 <ul class="vertical-center flex-column">
@@ -649,10 +653,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-6 col-md-3 col-xl-2 mb-md-2 mb-lg-1 col-sm-6 product-box">
+                <div class="col-6 col-md-3 col-xl-2 mb-md-2 mb-lg-1 col-sm-4 product-box">
                     <div class="card product-item">
-                        <a href="product-name.html"><img class="card-img-top img-fluid"
-                                src="assets/img/addcart.png" alt=""></a>
+                        <a href="product-name.html"><img class="card-img-top img-fluid" src="assets/img/addcart.png"
+                                alt=""></a>
                         <div class="card-body p-0 py-2">
                             <div class="card-icon">
                                 <ul class="vertical-center flex-column">
@@ -679,8 +683,9 @@
                         </div>
                     </div>
                 </div>
-
             </div>
+
+        </div>
         </div>
     </section>
     <!-- ============ product section End ============ -->
@@ -700,19 +705,22 @@
                     </form>
                 </div>
             </div>
-            <div class="col-lg-6 col-md-12 col-12">
-                <div class="row right-col align-items-center h-100 py-md-5 py-lg-0 gx-0">
-                    <div class="col-md-3 col-sm-6 py-sm-3 text-center py-md-3 py-lg-0">
-                        <img class="img-fluid" src="assets/img/brand-logo-4a.png" alt="">
+            <div class="col-lg-6 col-md-12 col-12 clients">
+                <div class="owl-carousel owl-theme" id="client">
+                    <div class="item">
+                        <a href="#"><img class="img-fluid" src="assets/img/brand-logo-4a.png" alt=""></a>
                     </div>
-                    <div class="col-md-3 col-sm-6 py-sm-3 text-center py-md-3 py-lg-0">
-                        <img class="img-fluid" src="assets/img/brand-logo-1a.png" alt="">
+                    <div class="item">
+                        <a href="#"><img class="img-fluid" src="assets/img/brand-logo-1a.png" alt=""></a>
                     </div>
-                    <div class="col-md-3 col-sm-6 py-sm-3 text-center py-md-3 py-lg-0">
-                        <img class="img-fluid" src="assets/img/brand-logo-2a.png" alt="">
+                    <div class="item">
+                        <a href="#"><img class="img-fluid" src="assets/img/brand-logo-2a.png" alt=""></a>
                     </div>
-                    <div class="col-md-3 col-sm-6 py-sm-3 text-center py-md-3 py-lg-0">
-                        <img class="img-fluid" src="assets/img/brand-logo-3a.png" alt="">
+                    <div class="item">
+                        <a href="#"><img class="img-fluid" src="assets/img/brand-logo-2a.png" alt=""></a>
+                    </div>
+                    <div class="item">
+                        <a href="#"><img class="img-fluid" src="assets/img/brand-logo-3a.png" alt=""></a>
                     </div>
                 </div>
             </div>
@@ -828,8 +836,13 @@
         integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
     </script>
+
+    <!--owl.carousel.js-->
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/jquery.js"></script>
     <!-- ========== Document JavaScript Source Link =========== -->
     <script src="style.js"></script>
+</body>
 </body>
 
 </html>

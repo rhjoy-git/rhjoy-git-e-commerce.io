@@ -14,9 +14,13 @@ li {
   list-style: none;
 }
 
-a {
+a,
+a:hover,
+a:active,
+a:focus {
+  display: inline-block;
   text-decoration: none;
-  color: #fff;
+  color: red;
 }
 
 body {
@@ -29,13 +33,11 @@ body {
   align-items: center;
 }
 
-.top-contact-info a pre {
-  font-size: 0.8rem;
-}
-
+.top-contact-info a pre,
 .top-contact-info a svg,
 .top-social-icon a svg {
   font-size: 0.8rem !important;
+  color: #e7e9f0;
 }
 
 .top-social-icon a {
@@ -43,6 +45,12 @@ body {
   padding: 0 0.3rem;
   transition: 0.2s;
   cursor: pointer;
+}
+
+.top-contact-info a:hover pre,
+.top-contact-info a:hover svg {
+  color: rgb(48, 110, 233);
+  text-decoration: underline;
 }
 
 .top-social-icon a:hover svg {
@@ -138,10 +146,31 @@ body {
   transform: translateY(-50%);
 }
 
-.carousel-indicators {
-  bottom: 30px;
+.cust-crsl-item {
+  width: 100%;
+  height: 90vh;
 }
 
+.cust-crsl-item img {
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+  top: 50%;
+  background: #3cb878;
+  height: 75px;
+  width: 45px;
+}
+
+.carousel-control-prev {
+  left: 5%;
+}
+
+.carousel-control-next {
+  right: 5%;
+}
 
 /* --------------------- */
 .card img {
@@ -208,6 +237,7 @@ body {
 
 /* --------------------------- */
 .service-cart-col {
+  height: 180px;
   background: #f5f6f9;
   border-right: 2px solid #fff;
 }
@@ -289,15 +319,11 @@ body {
   padding: 0.554rem;
 }
 
-.right-col {
-  background: #e7e9f0;
+.clients {
+  background-color: #fff;
+  display: flex;
 }
 
-.right-col img {
-  width: 55%;
-  aspect-ratio: 3/2;
-  object-fit: contain;
-}
 
 /* ------------------ */
 .discount-footer p,
@@ -319,6 +345,7 @@ body {
   border-left: 2px solid #e7e9f0;
   border-right: 2px solid #e7e9f0;
 }
+
 
 /* --------------------------- */
 .info-item li a,
@@ -359,13 +386,16 @@ body {
   /* ------BestSell section End------- */
 }
 
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 992px) {
 
   /* ------hero section Start------- */
   .banner-content {
-    top: 7%;
+    top: 25%;
   }
-
+  .cust-crsl-item {
+    width: 100%;
+    height: 70vh;
+  }
   .banner-content p {
     font-size: 1rem;
   }
@@ -398,19 +428,40 @@ body {
   }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
 
   /* ------hero section Start------- */
+  .cust-crsl-item {
+    width: 100%;
+    height: 60vh;
+  }
+
   .banner-content h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 
   .banner-content p {
-    font-size: 0.8rem !important;
+    font-size: 0.9rem !important;
   }
 
-  .carousel-indicators {
-    display: none;
+  .carousel-control-next,
+  .carousel-control-prev {
+    top: 45%;
+    height: 50px;
+    width: 30px;
+  }
+
+  .banner-content {
+    text-align: center;
+    left: auto;
+    padding: 0 4.5rem;
+    top: 4rem;
+  }
+
+  .banner-content p {
+    width: auto;
+    padding: 0 2rem;
+    margin: 0.75rem 0;
   }
 
   /* ------hero section End------- */
@@ -472,28 +523,11 @@ body {
   }
 }
 
-@media only screen and (max-width: 575px) {
+@media only screen and (max-width: 576px) {
 
   /* Top sec start  */
-  .banner-content {
-    top: 20px;
-    left: 60px;
-    padding: 5px;
-  }
-
-  .banner-content h2 {
-    font-size: 1.1rem;
-    margin: 0;
-  }
-
-  .banner-content p {
-    font-size: 0.7rem !important;
-    margin: 2px 0;
-  }
-
-  .custom-btn {
-    font-size: 0.5rem !important;
-    padding: 3px !important;
+  .top-contact-info .contact pre span {
+    margin: 0 30px !important;
   }
 
   .top .container {
@@ -508,40 +542,124 @@ body {
     width: 100%;
   }
 
-  /* Top sec End  */
-
-  .information {
-    text-align: center;
+  /* ------------------- */
+  .cust-crsl-item {
+    width: 100%;
+    height: 50vh;
   }
 
-  .information h5 {
-    margin: 5px 0 0 0;
+  .carousel-indicators {
+    display: none;
   }
 
-  .info-item:last-child li {
-    justify-content: center;
+  .carousel-control-next,
+  .carousel-control-prev {
+    top: 45%;
+    height: 45px;
+    width: 15px;
   }
-}
 
+  .carousel-control-prev {
+    left: 2%;
+  }
 
+  .carousel-control-next {
+    right: 2%;
+  }
 
+  .carousel-control-next span,
+  .carousel-control-prev span {
+    height: 1rem;
+    width: 1rem;
+  }
 
-
-
-@media only screen and (max-width: 400px) {
   .banner-content {
-    top: 13%;
-    left: 10%;
-    padding: 5px;
+    text-align: center;
+    left: auto;
+    padding: 0 1.5rem;
+    top: 4rem;
   }
 
   .banner-content h2 {
-    font-size: 1rem;
-    margin: 0;
+    font-size: 2.25rem;
   }
 
   .banner-content p {
-    font-size: 0.5rem !important;
-    margin: 2px 0;
+    font-size: 0.9rem !important;
+    width: auto;
+    margin: 0.75rem 0;
+  }
+
+  /* hero sec End  */
+  .offer .offer-card{
+    height: 30vh;
+  }
+
+  /* ------------- */
+  .discount-info {
+    padding: 0 5px;
+  }
+
+  .left-col form {
+    display: block !important;
+  }
+
+  .left-col form input {
+    width: 100% !important;
+  }
+
+  .left-col a {
+    margin: 10px 0;
+    margin-left: 0 !important;
+  }
+
+  /* --------------- */
+  .information {
+    text-align: left;
+    margin-left: 4.5rem;
+  }
+
+  .information h5 {
+    margin: 1rem 0 0 0;
+  }
+
+  .info-item {
+    margin-top: 0 !important;
+  }
+
+  .info-item:last-child li {
+    justify-content: start;
+  }
+
+  /* ------------------ */
+  .bank-card-item img {
+    width: 20px;
+  }
+
+}
+
+@media only screen and (max-width: 400px) {
+  .top-contact-info .contact pre span {
+    margin: 0 3px !important;
+  }
+  .cust-crsl-item {
+    height: 35vh;
+  }
+  .carousel-control-next,
+  .carousel-control-prev {
+    top: 50%;
+  }
+  .banner-content {
+    top: 2rem;
+  }
+  .banner-content h2 {
+    font-size: 1.25rem;
+  }
+
+  .banner-content p {
+    font-size: 0.7rem !important;
+  }
+  .offer .offer-card{
+    height: auto;
   }
 }
