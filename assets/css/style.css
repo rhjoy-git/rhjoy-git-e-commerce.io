@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 html {
   box-sizing: border-box;
 }
@@ -8,6 +10,7 @@ html {
   box-sizing: inherit;
   margin: 0;
   padding: 0;
+  font-family: 'Poppins', sans-serif;
 }
 
 li {
@@ -21,6 +24,15 @@ a:focus {
   display: inline-block;
   text-decoration: none;
   color: red;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
 }
 
 body {
@@ -236,28 +248,27 @@ body {
 }
 
 /* --------------------------- */
-.service-cart-col {
-  height: 180px;
-  background: #f5f6f9;
-  border-right: 2px solid #fff;
-}
-
-.service-cart-col:last-child {
+.service-card {
+  text-align: center;
   border: none;
+  border-radius: 0;
+  background: #e6e3e3;
 }
 
-
-.service-cart img {
-  width: 35px;
+.service-img img {
+  width: 15% !important;
+  aspect-ratio: 3/2;
+  object-fit: contain;
 }
-
-.service-cart h3 {
-  letter-spacing: 0.155rem;
+.service-des .card-title{
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
 }
-
-.service-cart span {
+.service-des .card-text{
   font-size: 0.8rem;
-  letter-spacing: 0.02rem;
 }
 
 /* ----------------- */
@@ -320,10 +331,19 @@ body {
 }
 
 .clients {
-  background-color: #fff;
-  display: flex;
+  background-color: #e6e3e3;
 }
 
+#client .item {
+  text-align: center;
+}
+
+#client .item img {
+  width: 100%;
+  aspect-ratio: 3/2;
+  object-fit: contain;
+  mix-blend-mode: color-burn;
+}
 
 /* ------------------ */
 .discount-footer p,
@@ -428,6 +448,10 @@ body {
   .discount-social-icon a svg {
     font-size: 0.85rem;
   }
+
+  .clients {
+    height: 30vh;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -499,15 +523,7 @@ body {
 
   /* ------BestSell section End------- */
   /* ------Service&Offer section Start------- */
-  .service-cart-col {
-    border: 2px solid #fff;
-    width: 100%;
-    height: 100%;
-  }
 
-  .service-cart-col:last-child {
-    border: 2px solid #fff;
-  }
 
   /* ------Service&Offer section End------- */
   /* ------------------- */
@@ -615,6 +631,11 @@ body {
     margin-left: 0 !important;
   }
 
+  /* ------------------ */
+  .clients {
+    height: 20vh;
+  }
+
   /* --------------- */
   .information {
     text-align: left;
@@ -685,7 +706,7 @@ body {
 }
 
 @media screen and (min-width: 460px) and (max-width: 576px) {
-  .product{
+  .product {
     padding: 0 50px;
   }
 }

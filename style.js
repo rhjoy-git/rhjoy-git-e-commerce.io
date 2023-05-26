@@ -10,12 +10,21 @@ $(document).ready(function () {
 		autoplayHoverPause: true,
 		responsive: {
 			0: {
+				items: 1
+			},
+			400: {
 				items: 2
 			},
-			415: {
+			450: {
 				items: 3
 			},
-			600: {
+			576: {
+				items: 4
+			},
+			768: {
+				items: 5
+			},
+			1000: {
 				items: 3
 
 			},
@@ -34,7 +43,7 @@ $(document).ready(function () {
 	});
 
 	// i. serviceOffer (carousel)
-	$('#serviceOffer').owlCarousel({
+	$('#service').owlCarousel({
 		items: 4,
 		loop: true,
 		smartSpeed: 1000,
@@ -43,10 +52,10 @@ $(document).ready(function () {
 		autoplayHoverPause: true,
 		responsive: {
 			0: {
-				items: 2
+				items: 1
 			},
 			415: {
-				items: 3
+				items: 2
 			},
 			600: {
 				items: 3
